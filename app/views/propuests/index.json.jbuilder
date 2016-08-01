@@ -1,0 +1,1 @@
+json.array! @propuests, partial: 'propuests/propuest', as: :propuest

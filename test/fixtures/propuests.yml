@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: propuests
+#
+#  id          :integer          not null, primary key
+#  descripcion :text
+#  cliente_id  :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descripcion: MyText
+  cliente: one
+
+two:
+  descripcion: MyText
+  cliente: two

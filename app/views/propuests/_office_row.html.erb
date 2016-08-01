@@ -1,0 +1,27 @@
+<div class="d_item-row-fieldset form-inline" id="d_item-<%= idx %>">
+  <legend><h5>Office Details</h5></legend>
+  <fieldset>
+    <%= f.simple_fields_for "d_item_rows[#{idx}]", d_item_row do |d_item_fields| %>
+
+      <% if d_item_row.persisted? %>
+        <%= d_item_fields.hidden_field :id, value: d_item_row.id, class: 'id-field' %>
+        <%= d_item_fields.hidden_field :remove, value: false, class: 'removal-field' %>
+      <% end %>
+
+      <%= d_item_fields.input :propuest_id %>
+      <%= d_item_fields.input :item_id %>
+
+    <% end %>
+
+    <div class="remove" style="display: inline;">
+      <%= link_to "Remove", '#', class: 'remove-d_item-row' %>
+    </div>
+
+    <div class="remove-confirm" style="display: none;">
+      Are you sure?
+      <%= link_to "Yes", '#', class: ['remove-d_item-row', 'yes'] %> / 
+      <%= link_to "No", '#', class: ['remove-d_item-row', 'no'] %>
+    </div>
+
+  </fieldset>
+</div>

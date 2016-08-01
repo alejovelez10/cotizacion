@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: clientes
+#
+#  id         :integer          not null, primary key
+#  nombre     :string
+#  correo     :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  correo: MyString
+
+two:
+  nombre: MyString
+  correo: MyString

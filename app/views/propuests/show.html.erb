@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @propuest.descripcion %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @propuest.cliente %>
+</p>
+
+<%= link_to 'Edit', edit_propuest_path(@propuest) %> |
+<%= link_to 'Back', propuests_path %>
